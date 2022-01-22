@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.carousel_container {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
+}
+
+.carousel_image {
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+}
+
+.nav {
+  transition: opacity 3s;
+  position: absolute;
+  top: 44%;
+  background-color: rgb(150,150,150);
+  opacity: 0.7;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: black;
+  -webkit-user-select: none;
+}
+
+.nav:hover {
+  transition: opacity 3s;
+  position: absolute;
+  top: 44%;
+  background-color: rgb(150,150,150);
+  opacity: 0.9;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: black;
+  -webkit-user-select: none;
+}
+
+.nav-left {
+  left: 0px;
+}
+
+.nav-right {
+  right: 0px;
+}
+
+.carousel-arrow-icon-left {
+  position: relative;
+  left: 0px;
+  top: 16px;
+}
+
+.carousel-arrow-icon-right {
+  position: relative;
+  right: 0px;
+  top: 16px;
+}

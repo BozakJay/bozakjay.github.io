@@ -1,1 +1,1 @@
-# bozakjay.github.io yes
+# bozakjay.github.io
